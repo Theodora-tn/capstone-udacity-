@@ -175,7 +175,7 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
 
               <Grid.Column width={2} floated="left" verticalAlign="middle" >
                   created day :  
-                   .{todo.createdAt.slice(1,10)}  
+                   -{todo.createdAt.slice(0,10)}  
               </Grid.Column>
 
               <Grid.Column width={5} floated="left">
