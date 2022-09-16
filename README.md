@@ -1,53 +1,48 @@
-# Serverless TODO
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Daily Diary App to note your daily schedule ,daily story and you can save an image to remind you your special day. 
 
-A simple TODO application using AWS Lambda and Serverless framework, for the final project of the Udacity Cloud Developer Nanodegree.
+<img width="1400" alt="image" src="https://user-images.githubusercontent.com/76467295/190570873-9069b03b-2132-4ec3-bcfe-dd4accf9f708.png">
 
-## Functionality of the application
 
-This application will allow creating/removing/updating/fetching TODO items. Each TODO item can optionally have an attachment image. Each user only has access to TODO items that he/she has created.
+## Available Scripts
 
-## Prerequisites
+In the project directory, you can run:
 
-### Node.js and NPM
+### `npm start`
 
-Before getting started, make sure Node.js is downloaded and installed. The latest version of Node.js can be downloaded from [nodejs.org](https://nodejs.com/en/download) and it's recommended to use the LTS version.
+Runs the app in the development mode.<br>
+Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 
-### Serverless Framework
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-Serverless Framework is used to build and deploy the application. Instructions for installing Serverless Framework can be found [here](https://serverless.com/framework/docs/getting-started/).
+### `npm test`
 
-### Amazon Web Services (AWS)
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-An AWS account is required to deploy the application.
+### `npm run build`
 
-### Auth0
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Auth0 is used for authentication and an Auth0 application should be created with asymmetrically encrypted keys (RS256).
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-## Getting started
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Backend
+### `npm run eject`
 
-To build and deploy the application, first edit the `backend/serverless.yml` file to set the appropriate AWS and Auth0 parameters, then run the following commands:
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-1. cd to the backend folder: `cd backend`
-2. Install dependencies: `npm install`
-3. Build and deploy to AWS: `sls deploy -v`
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Frontend
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-To run the client application, first edit the `client/src/config.ts` file to set the appropriate AWS and Auth0 parameters, then run the following commands:
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-1. cd to the client folder: `cd client`
-2. Install dependencies: `npm install`
-3. Run the client application: `npm run start`
+## Learn More
 
-This should start a development server with the React application that will interact with the serverless TODO application.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Postman collection
-
-A Postman collection is available in the root folder of the project, as an alternative way to test the API.
-
-## Acknowledgements
-
-This project was bootstrapped with [https://github.com/udacity/cloud-developer/tree/master/course-04/project/c4-final-project-starter-code](https://github.com/udacity/cloud-developer/tree/master/course-04/project/c4-final-project-starter-code).
+To learn React, check out the [React documentation](https://reactjs.org/).
