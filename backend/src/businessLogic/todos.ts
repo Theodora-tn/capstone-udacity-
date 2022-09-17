@@ -77,7 +77,7 @@ export async function deleteTodo(userId: string, todoId: string) {
 export async function updateAttachmentUrl(userId: string, todoId: string, attachmentId: string) {
   logger.info(`Generating attachment URL for attachment ${attachmentId}`)
 
-  const attachmentUrl = await todosStorage.getAttachmentUrl(attachmentId)
+  const attachmentUrl = await todosStorage.getNewAttachmentUrl(attachmentId)
 
   const item = await todosAccess.getTodoItem(todoId)
 
@@ -89,6 +89,7 @@ export async function updateAttachmentUrl(userId: string, todoId: string, attach
   }
 
   await todosAccess.updateAttachmentUrl(todoId, attachmentUrl)
+
 }
 
 export async function generateUploadUrl(attachmentId: string): Promise<string> {
