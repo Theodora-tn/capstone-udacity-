@@ -3,7 +3,7 @@ This is a Daily Diary App to note your daily schedule ,daily story and you can s
 
 <img width="1400" alt="image" src="https://user-images.githubusercontent.com/76467295/190570873-9069b03b-2132-4ec3-bcfe-dd4accf9f708.png">
 
-
+Please check carefully, the image is resized with SNS and jimp function is S3 folder which is different from the serverless project. 
 ## Available Scripts
 
 In the project directory, you can run:
